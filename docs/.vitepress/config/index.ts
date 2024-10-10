@@ -1,23 +1,13 @@
 import { defineConfig } from "vitepress";
-import { themeConfig } from "./routes/index.ts";
+import { shared } from "./lang/shared";
+import { en } from "./lang/en";
+import { zh } from "./lang/zh";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-	title: "Firefly",
-	description: "Firefly Components",
-	themeConfig,
+	...shared,
 	locales: {
-		root: {
-			label: "English",
-			lang: "en",
-			link: "/page",
-		},
-		zh: {
-			label: "简体中文",
-			lang: "zh", // optional, will be added  as `lang` attribute on `html` tag
-			link: "/page/zh/guide", // shows on navbar translations menu, can be external
-
-			// other locale specific properties...
-		},
+		root: { label: "English", ...en },
+		zh: { label: "简体中文", ...zh },
 	},
 });
