@@ -12,7 +12,7 @@ hero:
       link: /guide/what-is-firefly
     - theme: alt
       text: Quick Start
-      link: /api-examples
+      link: /components/quick-start
     - theme: alt
       text: Github
       link: https://github.com/isixe/Firefly

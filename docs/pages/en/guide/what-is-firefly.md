@@ -2,12 +2,12 @@
 outline: deep
 ---
 
-# Runtime API Examples
+# What is Firefly?
+Firefly is designed based on mainstream component libraries and is a set of reusable general component examples.
 
-This page demonstrates usage of some of the runtime APIs provided by VitePress.
+Its core concept lies in the fact that users can easily build freely controlled and functionally consistent global components without the need for additional installations, simply by referring to the sample code.
 
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
-
+<!--
 ```md
 <script setup>
 import { useData } from 'vitepress'
@@ -46,4 +46,4 @@ const { site, theme, page, frontmatter } = useData()
 
 ## More
 
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata). -->
