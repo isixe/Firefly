@@ -8,17 +8,17 @@ export const zh = defineConfig({
 
 		sidebar: {
 			"/zh/guide/": { base: "/zh/guide/", items: sidebarGuide() },
-			"/zh/reference/": { base: "/zh/reference/", items: sidebarReference() },
+			"/zh/components/": { base: "/zh/components/", items: sidebarComponent() },
 		},
 
 		editLink: {
-			pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
+			pattern: "https://github.com/isixe/Firefly/edit/main/docs/:path",
 			text: "在 GitHub 上编辑此页面",
 		},
 
 		footer: {
 			message: "基于 MIT 许可发布",
-			copyright: `版权所有 © 2019-${new Date().getFullYear()} 尤雨溪`,
+			copyright: `版权所有 © 2024-${new Date().getFullYear()} isixe`,
 		},
 
 		docFooter: {
@@ -56,8 +56,8 @@ function nav(): DefaultTheme.NavItem[] {
 		},
 		{
 			text: "组件",
-			link: "/reference/site-config",
-			activeMatch: "/reference/",
+			link: "/components/dynamic-icon",
+			activeMatch: "/components/",
 		},
 		{
 			text: "0.0.1",
@@ -78,41 +78,22 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebarGuide(): DefaultTheme.SidebarItem[] {
 	return [
 		{
-			text: "Introduction",
+			text: "简介",
 			collapsed: false,
-			items: [{ text: "What is Firefly?", link: "what-is-firefly" }],
+			items: [
+				{ text: "什么是 Firefly?", link: "what-is-firefly" },
+				{ text: "快速上手", link: "quick-start" },
+			],
 		},
-		{
-			text: "Writing",
-			collapsed: false,
-			items: [{ text: "Markdown Extensions", link: "markdown" }],
-		},
-		{
-			text: "Customization",
-			collapsed: false,
-			items: [{ text: "Using a Custom Theme", link: "custom-theme" }],
-		},
-		{
-			text: "Experimental",
-			collapsed: false,
-			items: [{ text: "MPA Mode", link: "mpa-mode" }],
-		},
-		{ text: "Config & API Reference", base: "/reference/", link: "site-config" },
 	];
 }
 
-function sidebarReference(): DefaultTheme.SidebarItem[] {
+function sidebarComponent(): DefaultTheme.SidebarItem[] {
 	return [
 		{
-			text: "Reference",
-			items: [
-				{ text: "Site Config", link: "site-config" },
-				{
-					text: "Default Theme",
-					base: "/reference/default-theme-",
-					items: [{ text: "Overview", link: "config" }],
-				},
-			],
+			text: "组件",
+			collapsed: false,
+			items: [{ text: "动态图标", link: "dynamic-icon" }],
 		},
 	];
 }

@@ -9,7 +9,7 @@ export const en = defineConfig({
 
 		sidebar: {
 			"/guide/": { base: "/guide/", items: sidebarGuide() },
-			"/reference/": { base: "/reference/", items: sidebarReference() },
+			"/components/": { base: "/components/", items: sidebarComponent() },
 		},
 
 		editLink: {
@@ -33,8 +33,8 @@ function nav(): DefaultTheme.NavItem[] {
 		},
 		{
 			text: "Components",
-			link: "/reference/site-config",
-			activeMatch: "/reference/",
+			link: "/components/dynamic-icon",
+			activeMatch: "/components/",
 		},
 		{
 			text: "0.0.1",
@@ -57,39 +57,20 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
 		{
 			text: "Introduction",
 			collapsed: false,
-			items: [{ text: "What is Firefly?", link: "what-is-firefly" }],
+			items: [
+				{ text: "What is Firefly?", link: "what-is-firefly" },
+				{ text: "Quick start", link: "quick-start" },
+			],
 		},
-		{
-			text: "Writing",
-			collapsed: false,
-			items: [{ text: "Markdown Extensions", link: "markdown" }],
-		},
-		{
-			text: "Customization",
-			collapsed: false,
-			items: [{ text: "Using a Custom Theme", link: "custom-theme" }],
-		},
-		{
-			text: "Experimental",
-			collapsed: false,
-			items: [{ text: "MPA Mode", link: "mpa-mode" }],
-		},
-		{ text: "Config & API Reference", base: "/reference/", link: "site-config" },
 	];
 }
 
-function sidebarReference(): DefaultTheme.SidebarItem[] {
+function sidebarComponent(): DefaultTheme.SidebarItem[] {
 	return [
 		{
-			text: "Reference",
-			items: [
-				{ text: "Site Config", link: "site-config" },
-				{
-					text: "Default Theme",
-					base: "/reference/default-theme-",
-					items: [{ text: "Overview", link: "config" }],
-				},
-			],
+			text: "Components",
+			collapsed: false,
+			items: [{ text: "Dynamic Icon", link: "dynamic-icon" }],
 		},
 	];
 }
