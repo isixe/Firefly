@@ -1,4 +1,3 @@
-
 <script setup>
 const columns = [
   {
@@ -11,7 +10,7 @@ const columns = [
     title: '说明',
     dataIndex: 'description',
     key: 'description',
-    width: '60%',
+    width: '45%',
   },
   {
     title: '类型',
@@ -25,6 +24,12 @@ const columns = [
     key: 'default',
      width: '15%',
   },
+  {
+    title: '是否必须',
+    dataIndex: 'require',
+    key: 'require',
+    width: '15%',
+  },
 ];
 
 const data = [
@@ -34,20 +39,23 @@ const data = [
     description: 'Ant Design 的图标名称',
     type: 'string',
     default: 'undefined',
+    require: '是',
   },
-    {
+  {
     key: 'color',
     parameter: 'color',
     description: '图标颜色',
     type: 'string',
     default: 'undefined',
+    require: '否',
   },
-    {
+  {
     key: 'fontSize',
     parameter: 'fontSize',
     description: '图标字体大小',
     type: 'string',
     default: 'undefined',
+    require: '否',
   },
 ];
 </script>

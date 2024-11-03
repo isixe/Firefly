@@ -11,19 +11,25 @@ const columns = [
     title: 'description',
     dataIndex: 'description',
     key: 'description',
-    width: '60%',
+    width: '45%',
   },
   {
     title: 'type',
     dataIndex: 'type',
     key: 'type',
-     width: '15%',
+    width: '15%',
   },
   {
     title: 'default',
     dataIndex: 'default',
     key: 'default',
-     width: '15%',
+    width: '15%',
+  },
+  {
+    title: 'require',
+    dataIndex: 'require',
+    key: 'require',
+    width: '15%',
   },
 ];
 
@@ -31,9 +37,10 @@ const data = [
   {
     key: 'parameter',
     parameter: 'icon',
-    description: 'Icon names in Ant Design',
+    description: 'Icon name in Ant Design',
     type: 'string',
     default: 'undefined',
+    require: 'true',
   },
     {
     key: 'color',
@@ -41,6 +48,7 @@ const data = [
     description: 'Icon color',
     type: 'string',
     default: 'undefined',
+    require: 'false',
   },
     {
     key: 'fontSize',
@@ -48,6 +56,7 @@ const data = [
     description: 'Icon font size',
     type: 'string',
     default: 'undefined',
+    require: 'false',
   },
 ];
 </script>
