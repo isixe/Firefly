@@ -9,7 +9,8 @@ export const en = defineConfig({
 
 		sidebar: {
 			"/guide/": { base: "/guide/", items: sidebarGuide() },
-			"/components/": { base: "/components/", items: sidebarComponent() },
+			"/components/ant/": { base: "/components/ant/", items: sidebarComponent() },
+			"/components/element/": { base: "/components/element/", items: sidebarComponent() },
 		},
 
 		editLink: {
