@@ -56,8 +56,18 @@ function nav(): DefaultTheme.NavItem[] {
 		},
 		{
 			text: "组件",
-			link: "/components/dynamic-icon",
-			activeMatch: "/components/",
+			items: [
+				{
+					text: "Ant",
+					link: "/components/ant/dynamic-icon",
+					activeMatch: "/ant/",
+				},
+				{
+					text: "Element",
+					link: "/components/element/dynamic-icon",
+					activeMatch: "/element/",
+				},
+			],
 		},
 		{
 			text: "0.0.1",
