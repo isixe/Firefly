@@ -52,11 +52,11 @@ function nav(): DefaultTheme.NavItem[] {
 			items: [
 				{
 					text: "Changelog",
-					link: "https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md",
+					link: "https://github.com/isixe/Firefly/blob/main/CHANGELOG.md",
 				},
 				{
 					text: "Contributing",
-					link: "https://github.com/vuejs/vitepress/blob/main/.github/contributing.md",
+					link: "https://github.com/isixe/Firefly/blob/main/.github/contributing.md",
 				},
 			],
 		},
