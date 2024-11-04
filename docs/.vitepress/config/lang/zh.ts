@@ -8,7 +8,9 @@ export const zh = defineConfig({
 
 		sidebar: {
 			"/zh/guide/": { base: "/zh/guide/", items: sidebarGuide() },
-			"/zh/components/": { base: "/zh/components/", items: sidebarComponent() },
+			"/zh/components/ant/": { base: "/components/ant/", items: sidebarComponent() },
+			"/zh/components/element/": { base: "/components/element/", items: sidebarComponent() },
+			"/zh/components/element-plus/": { base: "/components/element-plus/", items: sidebarComponent() },
 		},
 
 		editLink: {
@@ -66,6 +68,11 @@ function nav(): DefaultTheme.NavItem[] {
 					text: "Element",
 					link: "/components/element/dynamic-icon",
 					activeMatch: "/element/",
+				},
+				{
+					text: "Element Plus",
+					link: "/components/element-plus/dynamic-icon",
+					activeMatch: "/element-plus/",
 				},
 			],
 		},

@@ -11,6 +11,7 @@ export const en = defineConfig({
 			"/guide/": { base: "/guide/", items: sidebarGuide() },
 			"/components/ant/": { base: "/components/ant/", items: sidebarComponent() },
 			"/components/element/": { base: "/components/element/", items: sidebarComponent() },
+			"/components/element-plus/": { base: "/components/element-plus/", items: sidebarComponent() },
 		},
 
 		editLink: {
@@ -44,6 +45,11 @@ function nav(): DefaultTheme.NavItem[] {
 					text: "Element",
 					link: "/components/element/dynamic-icon",
 					activeMatch: "/element/",
+				},
+				{
+					text: "Element Plus",
+					link: "/components/element-plus/dynamic-icon",
+					activeMatch: "/element-plus/",
 				},
 			],
 		},
