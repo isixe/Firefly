@@ -18,18 +18,18 @@ export default defineComponent({
 			default: "currentColor",
 		},
 		width: {
-			type: Number,
+			type: String,
 		},
 		height: {
-			type: Number,
+			type: String,
 		},
 	},
 	setup(props) {
 		const iconComponent = computed(() => Icon[props.icon] || undefined);
 		const iconStyle = computed(() => ({
 			color: props.color,
-			width: props.width + "px",
-			height: props.height + "px",
+			width: props.width,
+			height: props.height,
 		}));
 
 		return {
