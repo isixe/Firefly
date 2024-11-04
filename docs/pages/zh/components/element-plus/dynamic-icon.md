@@ -1,32 +1,31 @@
-
 <script setup>
 const columns = [
   {
-    title: 'parameter',
+    title: '参数',
     dataIndex: 'parameter',
     key: 'parameter',
     width: '15%',
   },
   {
-    title: 'description',
+    title: '说明',
     dataIndex: 'description',
     key: 'description',
     width: '45%',
   },
   {
-    title: 'type',
+    title: '类型',
     dataIndex: 'type',
     key: 'type',
     width: '15%',
   },
   {
-    title: 'default',
+    title: '默认',
     dataIndex: 'default',
     key: 'default',
     width: '15%',
   },
   {
-    title: 'require',
+    title: '是否必须',
     dataIndex: 'require',
     key: 'require',
     width: '15%',
@@ -50,10 +49,18 @@ const data = [
     default: 'currentColor',
     require: 'false',
   },
-    {
-    key: 'fontSize',
-    parameter: 'fontSize',
-    description: 'Icon font size',
+  {
+    key: 'width',
+    parameter: 'width',
+    description: 'Icon width',
+    type: 'String',
+    default: 'undefined',
+    require: 'false',
+  },
+  {
+    key: 'height',
+    parameter: 'height',
+    description: 'Icon height',
     type: 'String',
     default: 'undefined',
     require: 'false',
@@ -62,44 +69,30 @@ const data = [
 </script>
 
 ## Preparation
-Before using dynamic icons, please make sure that your project has installed ant design icons.
+在使用动态图标之前，请先确保你的项目安装了 element-plus icons
 
 ::: code-group
 ```sh [npm]
-# vue
-$ npm i --save @ant-design/icons-vue
-
-# react
-$ npm install @ant-design/icons --save
+$ npm install @element-plus/icons-vue
 ```
 
 ```sh [yarn]
-# vue
-$ yarn i @ant-design/icons-vue
-
-# react
-$ yarn i @ant-design/icons
+$ yarn add @element-plus/icons-vue
 ```
 
 ```sh [pnpm]
-# vue
-$ pnpm i @ant-design/icons-vue
-
-# react
-$ pnpm install @ant-design/icons
+$ pnpm install @element-plus/icons-vue
 ```
 :::
 
 ## Dynamic Icon
-
-<demo vue="dynamic-icon/antdv/DynamicIcon.vue" react="dynamic-icon/antdv/DynamicIcon.tsx"
+<demo vue="dynamic-icon/element-plus/DynamicIcon.vue"
  title="Dynamic Icon Subcomponent"
 />
 
-<demo vue="dynamic-icon/antdv/index.vue" react="dynamic-icon/antdv/index.tsx"
+<demo vue="dynamic-icon/element-plus/index.vue"
  title="Dynamic icon example"
-  description="You can use icon, color, and fontSize to specify the name, color, and font size of a dynamic icon."
-/>
+ />
 
 ## API
 <a-table :columns="columns" :data-source="data" :pagination='false'></a-table>
