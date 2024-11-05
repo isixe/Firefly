@@ -6,6 +6,9 @@ hero:
   name: Firefly
   text: 轻量化的组件实例
   tagline: 简易封装，专注于提升开发效率
+  image:
+    src: /favicon.ico
+    alt: Firefly
   actions:
     - theme: brand
       text: 什么是Firefly?

@@ -6,6 +6,9 @@ hero:
   name: Firefly
   text: lightweight component example
   tagline: Simple encapsulation, focusing on improving development efficiency
+  image:
+    src: /favicon.ico
+    alt: Firefly
   actions:
     - theme: brand
       text: What is firefly?
