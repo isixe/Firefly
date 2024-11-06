@@ -91,11 +91,11 @@ $ pnpm install @ant-design/icons
 
 ## 动态图标
 
-<demo vue="dynamic-icon/antdv/DynamicIcon.vue" react="dynamic-icon/antdv/DynamicIcon.tsx"
+<demo vue="dynamic-icon/ant/DynamicIcon.vue" react="dynamic-icon/ant/DynamicIcon.tsx"
  title="动态图标子组件"
 />
 
-<demo vue="dynamic-icon/antdv/index.vue" react="dynamic-icon/antdv/index.tsx"
+<demo vue="dynamic-icon/ant/index.vue" react="dynamic-icon/ant/index.tsx"
  title="动态图标示例"
   description="你可以使用 icon、color 和 fontSize 来指定动态图标的图标名、颜色和字体大小"
 />

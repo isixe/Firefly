@@ -92,11 +92,11 @@ $ pnpm install @ant-design/icons
 
 ## Dynamic Icon
 
-<demo vue="dynamic-icon/antdv/DynamicIcon.vue" react="dynamic-icon/antdv/DynamicIcon.tsx"
+<demo vue="dynamic-icon/ant/DynamicIcon.vue" react="dynamic-icon/ant/DynamicIcon.tsx"
  title="Dynamic Icon Subcomponent"
 />
 
-<demo vue="dynamic-icon/antdv/index.vue" react="dynamic-icon/antdv/index.tsx"
+<demo vue="dynamic-icon/ant/index.vue" react="dynamic-icon/ant/index.tsx"
  title="Dynamic icon example"
   description="You can use icon, color, and fontSize to specify the name, color, and font size of a dynamic icon."
 />
