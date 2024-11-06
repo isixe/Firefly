@@ -4,9 +4,6 @@ export const shared = defineConfig({
 	title: "Firefly",
 	lastUpdated: true,
 	srcDir: "pages",
-	vite: {
-		publicDir: "../../../public",
-	},
 	themeConfig: {
 		logo: "/favicon.ico",
 	},
