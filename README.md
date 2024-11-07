@@ -1,7 +1,7 @@
 # Firefly
 
 <div align=center>
-  <img style="text-align:center" src= width=15% />
+  <img style="text-align:center" src="https://raw.githubusercontent.com/isixe/firefly/refs/heads/main/docs/pages/favicon.ico" width=15% />
   <h1>Node-Tree</h1>
 
 <p>Firefly is an example of encapsulation for a set of global components, written based on mainstream UI libraries.</p>

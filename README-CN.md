@@ -1,7 +1,7 @@
 # Firefly
 
 <div align=center>
-  <img style="text-align:center" src= width=15% />
+  <img style="text-align:center" src="https://raw.githubusercontent.com/isixe/firefly/refs/heads/main/docs/pages/favicon.ico" width=15% />
   <h1>Node-Tree</h1>
 
 <p>Firefly是一组全局组件的封装示例，基于主流 UI 库编写</p>
