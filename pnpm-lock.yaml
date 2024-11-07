@@ -49,8 +49,8 @@ importers:
         specifier: ^1.4.3
         version: 1.4.3(@algolia/client-search@4.24.0)(@types/react@18.3.12)(async-validator@4.2.5)(postcss@8.4.47)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.2)
       vitepress-demo-plugin:
-        specifier: ^1.0.5
-        version: 1.0.5(vitepress@1.4.3(@algolia/client-search@4.24.0)(@types/react@18.3.12)(async-validator@4.2.5)(postcss@8.4.47)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.2))(vue@3.5.12)
+        specifier: ^1.1.0
+        version: 1.1.0(vitepress@1.4.3(@algolia/client-search@4.24.0)(@types/react@18.3.12)(async-validator@4.2.5)(postcss@8.4.47)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.2))(vue@3.5.12)
 
 packages:
 
@@ -1530,8 +1530,8 @@ packages:
       terser:
         optional: true
 
-  vitepress-demo-plugin@1.0.5:
-    resolution: {integrity: sha512-uD6/593ClASZAavOMBkoj1q6B+VmQWrXkmhIoJiDoLlflbBWDPNXv2BdS1kOgsIAY1MunGpC/jzTFwod3sagrA==}
+  vitepress-demo-plugin@1.1.0:
+    resolution: {integrity: sha512-n89boIoYHKCtD4yt1psqvsAE3DcnxuacFaHPDITbOUQ1m95yWt4FgczTqye7K7uVIgZYyJFQilGQmWIBLd9yiA==}
     peerDependencies:
       vitepress: '*'
       vue: ^3.2.0
@@ -3277,7 +3277,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  vitepress-demo-plugin@1.0.5(vitepress@1.4.3(@algolia/client-search@4.24.0)(@types/react@18.3.12)(async-validator@4.2.5)(postcss@8.4.47)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.2))(vue@3.5.12):
+  vitepress-demo-plugin@1.1.0(vitepress@1.4.3(@algolia/client-search@4.24.0)(@types/react@18.3.12)(async-validator@4.2.5)(postcss@8.4.47)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.2))(vue@3.5.12):
     dependencies:
       vitepress: 1.4.3(@algolia/client-search@4.24.0)(@types/react@18.3.12)(async-validator@4.2.5)(postcss@8.4.47)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.2)
       vue: 3.5.12
