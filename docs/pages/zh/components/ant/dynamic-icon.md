@@ -91,11 +91,27 @@ $ pnpm install @ant-design/icons
 
 ## 动态图标
 
-<demo vue="dynamic-icon/ant/DynamicIcon.vue" react="dynamic-icon/ant/DynamicIcon.tsx"
+<demo vue="dynamic-icon/ant/js/DynamicIcon.vue" react="dynamic-icon/ant/js/DynamicIcon.tsx"
+  :vueFiles="{
+    'JS': 'dynamic-icon/ant/js/DynamicIcon.vue',
+    'TS': 'dynamic-icon/ant/ts/DynamicIcon.vue',
+  }"
+  :reactFiles="{
+    'JS': 'dynamic-icon/ant/js/DynamicIcon.tsx',
+    'TS': 'dynamic-icon/ant/ts/DynamicIcon.tsx',
+  }"
  title="动态图标子组件"
 />
 
-<demo vue="dynamic-icon/ant/index.vue" react="dynamic-icon/ant/index.tsx"
+<demo vue="dynamic-icon/ant/js/index.vue" react="dynamic-icon/ant/ts/index.tsx"
+  :vueFiles="{
+    'JS': 'dynamic-icon/ant/js/index.vue',
+    'TS': 'dynamic-icon/ant/ts/index.vue',
+  }"
+  :reactFiles="{
+    'JS': 'dynamic-icon/ant/js/index.tsx',
+    'TS': 'dynamic-icon/ant/ts/index.tsx',
+  }"
  title="动态图标示例"
   description="你可以使用 icon、color 和 fontSize 来指定动态图标的图标名、颜色和字体大小"
 />

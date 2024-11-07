@@ -86,11 +86,19 @@ $ pnpm install @element-plus/icons-vue
 :::
 
 ## Dynamic Icon
-<demo vue="dynamic-icon/element-plus/DynamicIcon.vue"
+<demo vue="dynamic-icon/element-plus/js/DynamicIcon.vue"
+  :vueFiles="{
+    'JS': "dynamic-icon/element-plus/js/DynamicIcon.vue",
+    'TS': 'dynamic-icon/element-plus/ts/DynamicIcon.vue',
+  }"
  title="Dynamic Icon Subcomponent"
 />
 
-<demo vue="dynamic-icon/element-plus/index.vue"
+<demo vue="dynamic-icon/element-plus/js/index.vue"
+  :vueFiles="{
+    'JS': "dynamic-icon/element-plus/js/index.vue",
+    'TS': "dynamic-icon/element-plus/ts/index.vue",
+  }"
  title="Dynamic icon example"
  />
 
