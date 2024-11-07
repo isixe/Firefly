@@ -3,11 +3,10 @@
 </template>
 
 <script>
-import { defineComponent, computed } from "vue";
-import * as Icon from "@ant-design/icons-vue";
+import { computed } from "vue";
+import * as Icons from "@ant-design/icons-vue";
 
-export default defineComponent({
-	name: "AntIcon",
+export default {
 	props: {
 		icon: {
 			type: String,
@@ -22,7 +21,7 @@ export default defineComponent({
 		},
 	},
 	setup(props) {
-		const iconComponent = computed(() => Icon[props.icon] || undefined);
+		const iconComponent = computed(() => Icons[props.icon] || undefined);
 		const iconStyle = computed(() => ({
 			color: props.color,
 			fontSize: props.fontSize,
@@ -33,5 +32,5 @@ export default defineComponent({
 			iconStyle,
 		};
 	},
-});
+};
 </script>

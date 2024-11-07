@@ -1,8 +1,8 @@
 import React from "react";
-import * as Icon from "@ant-design/icons"; // Assuming the icon component is imported as AntIcon
+import * as Icons from "@ant-design/icons";
 
 const AntIcon = ({ icon, color = "currentColor", fontSize }) => {
-	const IconComponent = icon ? Icon[icon] : undefined;
+	const IconComponent = icon ? Icons[icon] : undefined;
 
 	const iconStyle = {
 		color: color,

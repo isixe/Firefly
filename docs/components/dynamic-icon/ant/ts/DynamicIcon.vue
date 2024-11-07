@@ -2,12 +2,11 @@
 	<component :is="iconComponent" :style="iconStyle" />
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent, computed } from "vue";
-import * as Icon from "@element-plus/icons-vue";
+import * as Icons from "@ant-design/icons-vue";
 
 export default defineComponent({
-	name: "ElPlusIcon",
 	props: {
 		icon: {
 			type: String,
@@ -17,19 +16,15 @@ export default defineComponent({
 			type: String,
 			default: "currentColor",
 		},
-		width: {
-			type: String,
-		},
-		height: {
+		fontSize: {
 			type: String,
 		},
 	},
-	setup(props) {
-		const iconComponent = computed(() => Icon[props.icon] || undefined);
+	setup(props: { icon: string; color?: string; fontSize?: string }) {
+		const iconComponent = computed(() => Icons[props.icon] || undefined);
 		const iconStyle = computed(() => ({
 			color: props.color,
-			width: props.width,
-			height: props.height,
+			fontSize: props.fontSize,
 		}));
 
 		return {
