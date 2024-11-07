@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import { vitepressDemoPlugin } from "vitepress-demo-plugin";
+import { groupIconMdPlugin, groupIconVitePlugin } from "vitepress-plugin-group-icons";
 import react from "@vitejs/plugin-react";
 import { shared } from "./lang/shared";
 import { en } from "./lang/en";
@@ -18,10 +19,11 @@ export default defineConfig({
 			md.use(vitepressDemoPlugin, {
 				demoDir: path.resolve(__dirname, "../../components"),
 			});
+			md.use(groupIconMdPlugin);
 		},
 	},
 	vite: {
-		plugins: [react()],
+		plugins: [react(), groupIconVitePlugin()],
 		publicDir: "../public",
 	},
 	sitemap: {
