@@ -24,4 +24,7 @@ export default defineConfig({
 		plugins: [react()],
 		publicDir: "../public",
 	},
+	sitemap: {
+		hostname: "https://firefly.itea.dev",
+	},
 });
